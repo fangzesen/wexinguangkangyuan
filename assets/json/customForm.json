@@ -1,0 +1,175 @@
+[{
+    "txt": "填写请假条",
+    "value": "",
+    "type": "groupbegin",
+    "extend": {
+        "field": "",
+        "fieldtype": "",
+        "enumeration": []
+    }
+}, {
+    "txt": "请假类型",
+    "value": "",
+    "type": "select",
+    "extend": {
+        "field": "REC_QJLX",
+        "editable": "False",
+        "fieldtype": "",
+        "enumeration": [{
+            "key": "290006",
+            "value": "休假"
+        }, {
+            "key": "290001",
+            "value": "事假"
+        }, {
+            "key": "290003",
+            "value": "探亲假"
+        }, {
+            "key": "290099",
+            "value": "其他"
+        }]
+    }
+}, {
+    "txt": "显示关联时间",
+    "value": "true",
+    "type": "toggle",
+    "extend": {
+        "field": "REC_JCGCDY",
+        "fieldtype": "",
+        "enumeration": [],
+        "relateFieldList": [
+            "REC_QJKSSJY",
+            "REC_QJJSSJY",
+            "REC_GLZJ"
+        ]
+    }
+}, {
+    "txt": "关联起始时间",
+    "value": "",
+    "type": "dateyymmdd",
+    "extend": {
+        "field": "REC_QJKSSJY",
+        "fieldtype": "",
+        "enumeration": []
+    }
+}, {
+    "txt": "关联结束时间",
+    "value": "",
+    "type": "dateyymmdd",
+    "extend": {
+        "field": "REC_QJJSSJY",
+        "fieldtype": "",
+        "enumeration": []
+    }
+}, {
+    "txt": "关联总计",
+    "value": "",
+    "type": "text",
+    "extend": {
+        "field": "REC_GLZJ",
+        "fieldtype": "float",
+        "enumeration": []
+    }
+}, {
+    "txt": "",
+    "value": "",
+    "type": "date",
+    "extend": {
+        "field": "REC_QJKSSJ",
+        "fieldtype": "",
+        "enumeration": [],
+        "dateArray": [{
+            "txt": "请假起始时间-改",
+            "value": "",
+            "type": "dateyymmdd",
+            "extend": {
+                "field": "REC_QJQSSJ",
+                "fieldtype": "start",
+                "enumeration": []
+            }
+        }, {
+            "txt": "请假结束时间-改",
+            "value": "",
+            "type": "dateyymmdd",
+            "extend": {
+                "field": "REC_QJJSSJ",
+                "fieldtype": "end",
+                "enumeration": []
+            }
+        }, {
+            "txt": "总计-改",
+            "value": "",
+            "type": "text",
+            "extend": {
+                "field": "REC_ZJ",
+                "fieldtype": "interval",
+                "enumeration": []
+            }
+        }]
+    }
+}, {
+    "txt": "",
+    "value": "",
+    "type": "date",
+    "extend": {
+        "field": "REC_QJKSSJ",
+        "fieldtype": "",
+        "enumeration": [],
+        "dateArray": [{
+            "txt": "月份-不需要运算仅显示",
+            "value": "",
+            "type": "datetime",
+            "extend": {
+                "field": "REC_QJQSSJ",
+                "fieldtype": "",
+                "enumeration": []
+            }
+        }]
+    }
+}, {
+    "txt": "",
+    "value": "",
+    "type": "date",
+    "extend": {
+        "field": "REC_QJKSSJ",
+        "fieldtype": "",
+        "enumeration": [],
+        "dateArray": [{
+            "txt": "请假起始时间-详细",
+            "value": "",
+            "type": "dateyymm",
+            "extend": {
+                "field": "REC_QJQSSJ",
+                "fieldtype": "start",
+                "enumeration": []
+            }
+        }, {
+            "txt": "请假结束时间-详细",
+            "value": "",
+            "type": "dateyymm",
+            "extend": {
+                "field": "REC_QJJSSJ",
+                "fieldtype": "end",
+                "enumeration": []
+            }
+        }, {
+            "txt": "总计-改",
+            "value": "",
+            "type": "text",
+            "extend": {
+                "field": "REC_ZJ",
+                "fieldtype": "interval",
+                "enumeration": []
+            }
+        }]
+    }
+}, {
+    "txt": "",
+    "value": "",
+    "type": "groupend",
+    "extend": {
+        "field": "",
+        "fieldtype": "",
+        "enumeration": []
+    }
+}]
